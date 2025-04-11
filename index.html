@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'Avatars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Créateur d'Avatar</h1>
+        <div class="avatar-container">
+            <canvas id="avatarCanvas" width="300" height="300"></canvas>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <button id="randomize">Générer Aléatoire</button>
+                <button id="download">Télécharger Avatar</button>
+            </div>
+            <div class="control-group">
+                <label for="skinColor">Couleur de Peau:</label>
+                <input type="color" id="skinColor" value="#f5d0b9">
+            </div>
+            <div class="control-group">
+                <label for="hairColor">Couleur de Cheveux:</label>
+                <input type="color" id="hairColor" value="#3a2d1e">
+            </div>
+            <div class="control-group">
+                <label for="eyeColor">Couleur des Yeux:</label>
+                <input type="color" id="eyeColor" value="#000000">
+            </div>
+            <div class="control-group">
+                <label for="accessory">Accessoire:</label>
+                <select id="accessory">
+                    <option value="none">Aucun</option>
+                    <option value="glasses">Lunettes</option>
+                    <option value="hat">Chapeau</option>
+                    <option value="earrings">Boucles d'oreilles</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="facialHair">Barbe/Moustache:</label>
+                <select id="facialHair">
+                    <option value="none">Aucune</option>
+                    <option value="beard">Barbe</option>
+                    <option value="mustache">Moustache</option>
+                    <option value="goatee">Bouc</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
